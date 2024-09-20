@@ -257,6 +257,7 @@ h3 { font-size: var(--fs-h3) }
 
 .intro {
     position: relative;
+    padding-top: 150px;
 }
 
 .intro__img {
@@ -335,6 +336,15 @@ h3 { font-size: var(--fs-h3) }
     max-width: 500px;
     margin: 0 auto;
     /* gap: 20px; */
+}
+.service::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
 }
 .skill{
     font-size: var(--fs-h3);
