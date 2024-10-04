@@ -305,12 +305,19 @@ h3 { font-size: var(--fs-h3) }
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
+    background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
-    /* background-blend-mode: multiply; */
+    background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
+    position: relative;
+    /* height: 100vh; */
+    background-position: center;
+    background-attachment: scroll;
 }
+
+/* .content {
+    height: 150vh; /* 增加內容高度以便測試滾動效果 */
 
 .section__title--services {
     color: var(--clr-accent);
@@ -515,9 +522,6 @@ li{
     margin-right: auto;
 }
 
-
-
-
 .material-symbols-rounded {
     font-size: 45px;
     font-variation-settings:
@@ -526,3 +530,26 @@ li{
     'GRAD' 0,
     'opsz' 48
 }
+/* 動態用 */
+.intro{
+    opacity: 0;                  
+    transform: translateX(-40%); 
+    transition: all 1s ease; 
+}
+.service{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateX(20%);
+}
+
+.section__title--about, .section__subtitle--about, .about-me__body,
+.section__title--work, .section__subtitle--work,.portfolio{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(20%);
+} 
+
+  
+
