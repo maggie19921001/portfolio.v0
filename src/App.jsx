@@ -188,7 +188,7 @@ function Work() {
   return (
     <section className="my-work" id="work">
       <h2 className="section__title section__title--work" data-reveal>
-        My work
+        My works
       </h2>
       <p className="section__subtitle section__subtitle--work" data-reveal>
         A selection of my range of work
